@@ -58,17 +58,7 @@ function solve(agent::MyQLearningAgentModel, environment::MyExperimentalDrugCock
     return agent
 end
 
-"""
-    mypolicy(Q_array::Array{Float64,2}) -> Array{Int,1}
 
-This function computes the policy from the Q-value function.
-
-### Arguments
-- `Q_array::Array{Float64,2}`: the Q-value function
-
-### Returns
-- `Array{Int,1}`: the policy which maps states to actions
-"""
 function mypolicy(Q_array::Array{Float64,2})::Array{Int64,1}
 
     # get the dimension -
